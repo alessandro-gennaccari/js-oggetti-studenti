@@ -60,5 +60,11 @@ var cognome = prompt('inserisci il tuo cognome');
 var eta = parseInt(prompt('Inserisci la tua età'))
 
 var nuovoStudente = {
-
+    'nome': nome,
+    'cognome': cognome,
+    'eta': eta
 };
+
+studenti.push(nuovoStudente);
+console.log(nuovoStudente);
+console.log(studenti);
