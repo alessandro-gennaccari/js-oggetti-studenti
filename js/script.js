@@ -6,11 +6,11 @@ var studente = {
     'nome': 'Alessandro',
     'cognome': 'Gennaccari',
     'eta': 25
-}
+};
 
 for (var key in studente){
     console.log(studente[key]);
-};
+}
 
 // *-----------------------------------------------------------------
 
@@ -54,3 +54,11 @@ for (var i = 0; i < studenti.length; i++) {
 
 /* - Dare la possibilità all’utente attraverso 3 prompt di aggiungere
 un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età. */
+
+var nome = prompt('Inserisci il tuo nome');
+var cognome = prompt('inserisci il tuo cognome');
+var eta = parseInt(prompt('Inserisci la tua età'))
+
+var nuovoStudente = {
+
+};
