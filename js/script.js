@@ -2,6 +2,15 @@
 proprietà: nome, cognome e età.
 Stampare a schermo attraverso il for in tutte le proprietà. */
 
+var studente = {
+    'nome': 'Alessandro',
+    'cognome': 'Gennaccari',
+    'eta': 25
+}
+
+for (var key in studente){
+    console.log(studente[key]);
+}
 
 // *-----------------------------------------------------------------
 
