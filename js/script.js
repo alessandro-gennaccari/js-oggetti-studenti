@@ -45,6 +45,7 @@ var studenti = [
 ];
 
 for (var i = 0; i < studenti.length; i++) {
+    console.log('Object ' + i);
     console.log(studenti[i].nome);
     console.log(studenti[i].cognome);
 }
@@ -55,9 +56,23 @@ for (var i = 0; i < studenti.length; i++) {
 /* - Dare la possibilità all’utente attraverso 3 prompt di aggiungere
 un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età. */
 
-var nome = prompt('Inserisci il tuo nome');
-var cognome = prompt('inserisci il tuo cognome');
-var eta = parseInt(prompt('Inserisci la tua età'))
+var nome, cognome;
+
+do {
+    nome = prompt('Inserisci il tuo NOME');
+} while (nome == "" || nome == "undefined" || !isNaN(nome));
+
+do {
+    cognome = prompt('Inserisci il tuo COGNOME');
+} while (cognome == "" || cognome == "undefined" || !isNaN(cognome));
+
+do {
+    var eta = parseInt(prompt('Inserisci la tua età'))
+} while (isNaN(eta) || eta <= 0);
+
+nome = nome.charAt(0).toUpperCase() + nome.substring(1).toLowerCase();
+cognome = cognome.charAt(0).toUpperCase() + cognome.substring(1).toLowerCase();
+
 
 var nuovoStudente = {
     'nome': nome,
