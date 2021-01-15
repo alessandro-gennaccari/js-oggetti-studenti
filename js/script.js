@@ -10,7 +10,7 @@ var studente = {
 
 for (var key in studente){
     console.log(studente[key]);
-}
+};
 
 // *-----------------------------------------------------------------
 
@@ -18,6 +18,36 @@ for (var key in studente){
 /* - Creare un array di oggetti di studenti.
 Ciclare su tutti gli studenti e stampare per ognuno nome e cognome */
 
+var studenti = [
+    {
+        'nome': 'Alessandro',
+        'cognome': 'Gennaccari',
+        'eta': 25
+    },
+    {
+        'nome': 'Pippo',
+        'cognome': 'Super',
+        'eta': 88
+    },
+    {
+        'nome': 'Paolino',
+        'cognome': 'Paperino',
+        'eta': 86
+    },{
+        'nome': 'Pluto',
+        'cognome': 'Verdi',
+        'eta': 89
+    },{
+        'nome': 'Mario',
+        'cognome': 'Rossi',
+        'eta': 'molti'
+    },
+];
+
+for (var i = 0; i < studenti.length; i++) {
+    console.log(studenti[i].nome);
+    console.log(studenti[i].cognome);
+}
 
 // *-----------------------------------------------------------------
 
